@@ -1,6 +1,5 @@
  {
-    "baseUrl": "https://simple-books-api.glitch.me",
-    "get" : "Suresh.com"
+ "baseUrl":"https://mrolifetest.collins.com:8083/v3/"
 }
 
 
