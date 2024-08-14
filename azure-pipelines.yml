@@ -8,6 +8,7 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
+# YAML file in the release branch
 schedules:
 - cron: '0 0 * * *'
   displayName: Daily midnight build
@@ -15,6 +16,13 @@ schedules:
     include:
     - main
 
+# YAML file in the main branch with release added to the branches list
+- cron: '0 0 * * *'
+  displayName: Daily midnight build
+  branches:
+    include:
+    - main
+    - release
 steps:
 - task: Maven@3
   inputs:
